@@ -60,49 +60,68 @@ export default function Home() {
                     <Accordion.Header>Is er een coole poster die ik naar al mijn vrienden kan doorsturen?</Accordion.Header>
                     <Accordion.Body>
                         <Image src={'/Jazzclub I Poster.png'} width={500} height={500} alt={"Poster van Jazzclub I: Jazztronomical"} className={"tw-object-contain tw-max-w-md tw-h-full tw-w-full"}></Image>
-                        <br />Download hem <Link href={""} onClick={saveFile}>hier</Link>!
+                        <br/>Download hem <Link href={""} onClick={saveFile}>hier</Link>!
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey={"7"}>
+                    <Accordion.Header>En als ik die poster in het echt wil aanschouwen?</Accordion.Header>
+                    <Accordion.Body>
+                        Loop dan gezellig een rondje door Delft, de campus van TU Delft of langs de Bierfabriek!
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey={"8"}>
                     <Accordion.Header>Staat Bart Kroese nou op de poster?</Accordion.Header>
                     <Accordion.Body>
                         Ja, maar met een hoedje op.
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey={"8"}>
+                <Accordion.Item eventKey={"9"}>
                     <Accordion.Header>Wat doen al die mensen soms met hun handen/armen van die vage bewegingen richting het podium?</Accordion.Header>
                     <Accordion.Body>
                         Dat is leuk. Doe vooral mee als je het anderen ziet doen of begin er zelf mee wanneer de vibe aan is.
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey={"9"}>
+                <Accordion.Item eventKey={"10"}>
+                    <Accordion.Header>Hoeveel nachtjes slapen is het tot Jazzclub I: Jazztronomical?</Accordion.Header>
+                    <Accordion.Body>
+                        18!*<br/>
+                        <p className={"tw-text-sm"}><br/>*Deze informatie kan wellicht onjuist zijn.</p>
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey={"11"}>
                     <Accordion.Header>Wat is de jazz:club ratio?</Accordion.Header>
                     <Accordion.Body>
                         4:1.
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey={"10"}>
+                <Accordion.Item eventKey={"12"}>
                     <Accordion.Header>Heb je er een beetje zin in?</Accordion.Header>
                     <Accordion.Body>
                         Ja.
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey={"11"}>
+                <Accordion.Item eventKey={"13"}>
                     <Accordion.Header>Sorry, dat hoorde ik niet zo goed...</Accordion.Header>
                     <Accordion.Body>
                         JA!
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey={"12"}>
+                <Accordion.Item eventKey={"14"}>
                     <Accordion.Header>Dus als ik het goed begrijp is er een hele leuke Jazzclub gaande op 6 december om 20:30 bij de Bierfabriek waarbij Once More, Magatama en Carabinieri allemaal optreden?</Accordion.Header>
                     <Accordion.Body>
                         Precies!
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey={"13"}>
+                <Accordion.Item eventKey={"15"}>
                     <Accordion.Header>Gaat Sinterklaas er zijn?</Accordion.Header>
                     <Accordion.Body>
-                        Nee mafkees, hij is alweer terug naar Spanje. Ben je gek ofzo? Doe normaal.
+                        Nee mafkees, hij is alweer terug naar Spanje. Doe normaal.
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey={"16"}>
+                    <Accordion.Header>Is Bram gebehanglijmd?</Accordion.Header>
+                    <Accordion.Body>
+                        <Image src={'/behanglijm.jpg'} width={500} height={500} alt={"Behanglijm in een fietstas"} className={"tw-object-contain tw-max-w-md tw-h-full tw-w-full"}></Image>
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>
