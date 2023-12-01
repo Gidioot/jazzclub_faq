@@ -2,26 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+h1 {
+    @apply tw-m-0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+p {
+    @apply tw-m-0;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.accordion {
+    @apply tw-bg-jazz-white;
+}
+
+.accordion-button {
+    @apply tw-font-medium;
+    @apply tw-bg-jazz-white;
+}
+
+.accordion-button:not(.collapsed) {
+    @apply tw-bg-jazz-gold;
+}
+
+.accordion-button:focus {
+    @apply tw-shadow-none;
 }

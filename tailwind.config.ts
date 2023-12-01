@@ -13,8 +13,18 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'jazz-white': '#dbdfe1',
+        'jazz-blue': '#0e1418',
+        'jazz-gold': '#cf9d62',
+      },
     },
   },
   plugins: [],
+  prefix: 'tw-',
+  important: true,
+  corePlugins: {
+    preflight: false,
+  },
 }
 export default config

@@ -1,113 +1,111 @@
-import Image from 'next/image'
+'use client'
+
+import Accordion from 'react-bootstrap/Accordion'
+import Link from 'next/link';
+import Image from 'next/image';
+import { saveAs } from 'file-saver';
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    const saveFile = () => {
+        saveAs(
+            "/Jazzclub I Poster.png",
+            "Jazzclub I Jazztronomical Poster.png"
+        )
+    }
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+    return (
+        <main>
+            <h1 className={"tw-text-jazz-gold tw-text-center tw-py-8 tw-px-4 tw-font-bold"}>De Grote Epische Jazzclub I: Jazztronomical FAQ</h1>
+            <p className={"tw-text-jazz-white tw-text-center tw-pb-8 tw-px-4"}>You can also read it in <Link href={"/en"}>English</Link>.</p>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+            <Accordion className={"tw-max-w-3xl tw-mx-auto tw-bg-jazz-blue tw-p-4"}>
+            {/*<Accordion alwaysOpen className={"tw-max-w-3xl tw-mx-auto"}>*/}
+                <Accordion.Item eventKey={"0"}>
+                    <Accordion.Header>Wat is een Jazzclub?</Accordion.Header>
+                    <Accordion.Body>
+                        Een evenement met veel jazz, veel club, veel feest en veel gezelligheid!
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey={"1"}>
+                    <Accordion.Header>Waar en wanneer is Jazzclub I: Jazztronomical?</Accordion.Header>
+                    <Accordion.Body>
+                        De Jazzclub is op 6 december van 20:30 tot ongeveer 01:00 bij de <Link href={"https://maps.app.goo.gl/YNRqWJHQLsXVCjRr8"} target={"_blank"}>Bierfabriek</Link>.
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey={"2"}>
+                    <Accordion.Header>Shit, ik heb precies op 6 december om 20:30 een verplicht college. Wat nu?</Accordion.Header>
+                    <Accordion.Body>
+                        Geen zorgen, je kan op elk moment gezellig binnen komen wandelen!
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey={"3"}>
+                    <Accordion.Header>Gratis?</Accordion.Header>
+                    <Accordion.Body>
+                        Ja, de Jazzclub is helemaal gratis!
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey={"4"}>
+                    <Accordion.Header>Wie treden er eigenlijk op?</Accordion.Header>
+                    <Accordion.Body>
+                        3 fantastische Groover combo&apos;s: Once More, Magatama en Carabinieri!
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey={"5"}>
+                    <Accordion.Header>Voor wie is Jazzclub I: Jazztronomical?</Accordion.Header>
+                    <Accordion.Body>
+                        Voor Groover leden, niet Groover leden, familie, vrienden, vrienden van vrienden, vage kennissen en vagere kennissen. Eigenlijk gewoon iedereen die je zou kunnen uitnodigen om naar de Jazzclub te komen.
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey={"6"}>
+                    <Accordion.Header>Is er een coole poster die ik naar al mijn vrienden kan doorsturen?</Accordion.Header>
+                    <Accordion.Body>
+                        <Image src={'/Jazzclub I Poster.png'} width={500} height={500} alt={"Poster van Jazzclub I: Jazztronomical"} className={"tw-object-contain tw-max-w-md tw-h-full tw-w-full"}></Image>
+                        <br />Download hem <Link href={""} onClick={saveFile}>hier</Link>!
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey={"7"}>
+                    <Accordion.Header>Staat Bart Kroese nou op de poster?</Accordion.Header>
+                    <Accordion.Body>
+                        Ja, maar met een hoedje op.
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey={"8"}>
+                    <Accordion.Header>Wat doen al die mensen soms met hun handen/armen van die vage bewegingen richting het podium?</Accordion.Header>
+                    <Accordion.Body>
+                        Dat is leuk. Doe vooral mee als je het anderen ziet doen of begin er zelf mee wanneer de vibe aan is.
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey={"9"}>
+                    <Accordion.Header>Wat is de jazz:club ratio?</Accordion.Header>
+                    <Accordion.Body>
+                        4:1.
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey={"10"}>
+                    <Accordion.Header>Heb je er een beetje zin in?</Accordion.Header>
+                    <Accordion.Body>
+                        Ja.
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey={"11"}>
+                    <Accordion.Header>Sorry, dat hoorde ik niet zo goed...</Accordion.Header>
+                    <Accordion.Body>
+                        JA!
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey={"12"}>
+                    <Accordion.Header>Dus als ik het goed begrijp is er een hele leuke Jazzclub gaande op 6 december om 20:30 bij de Bierfabriek waarbij Once More, Magatama en Carabinieri allemaal optreden?</Accordion.Header>
+                    <Accordion.Body>
+                        Precies!
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey={"13"}>
+                    <Accordion.Header>Gaat Sinterklaas er zijn?</Accordion.Header>
+                    <Accordion.Body>
+                        Nee mafkees, hij is alweer terug naar Spanje. Ben je gek ofzo? Doe normaal.
+                    </Accordion.Body>
+                </Accordion.Item>
+            </Accordion>
+        </main>
+    )
 }
