@@ -17,12 +17,18 @@ p {
 .accordion-button {
     @apply tw-font-medium;
     @apply tw-bg-jazz-white;
+    @apply tw-text-jazz-blue;
 }
 
 .accordion-button:not(.collapsed) {
     @apply tw-bg-jazz-gold;
+    @apply tw-text-jazz-blue;
 }
 
 .accordion-button:focus {
     @apply tw-shadow-none;
+}
+
+.accordion-item {
+    @apply tw-text-jazz-blue;
 }
