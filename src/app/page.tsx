@@ -15,7 +15,7 @@ export default function Home() {
 
     return (
         <main>
-            <h1 className={"tw-text-jazz-gold tw-text-center tw-py-8 tw-px-4 tw-font-bold"}>De Grote Epische Jazzclub I: Jazztronomical FAQ</h1>
+            <h1 className={"tw-text-jazz-gold tw-text-center tw-pt-8 tw-pb-4 tw-px-4 tw-font-bold"}>De Grote Epische Jazzclub I: Jazztronomical FAQ</h1>
             <p className={"tw-text-jazz-white tw-text-center tw-pb-8 tw-px-4"}>You can also read it in <Link href={"/en"}>English</Link>.</p>
 
             <Accordion className={"tw-max-w-3xl tw-mx-auto tw-bg-jazz-blue tw-p-4"}>
